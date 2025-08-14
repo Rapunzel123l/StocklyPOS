@@ -1,0 +1,18 @@
+Dish
+ ├─ id: uint16_t
+ ├─ name: string
+ ├─ basePrice: float
+ ├─ defaultIngredients: vector<IngredientPortion>
+ │    └─ IngredientPortion
+ │         ├─ ingredient: Ingredient*
+ │         │    └─ Ingredient
+ │         │         ├─ id: uint16_t
+ │         │         └─ name: string
+ │         └─ quantity: Quantity
+ │              └─ Quantity
+ │                   ├─ value: uint32_t
+ │                   └─ unit: Unit
+ │                        ├─ Gram
+ │                        ├─ Kilogram
+ │                        ├─ Mililiter
+ │                        └─ Liter
